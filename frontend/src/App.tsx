@@ -79,7 +79,7 @@ function App() {
       );
 
       alert(
-        "Failed to process documents. Ensure the FastAPI backend server is running on port 8000."
+        "Failed to process documents. Please check the browser console and Network tab."
       );
 
       setScreenState("upload");

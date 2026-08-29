@@ -1,0 +1,162 @@
+.upload-page {
+    width: 100%;
+    max-width: 950px;
+    min-height: calc(100vh - 50px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 20px 40px;
+    box-sizing: border-box;
+}
+
+/* Header */
+.upload-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ai-badge {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background: #fff0ea;
+    color: #ff6338;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 13px;
+}
+
+.upload-header h1 {
+    margin: 0;
+    font-size: 28px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: #292929;
+}
+
+.upload-header h1 span {
+    color: #ff6338;
+}
+
+.upload-header p {
+    margin: 9px 0 0;
+    color: #858585;
+    font-size: 13px;
+}
+
+/* Illustration */
+.upload-illustration {
+    margin-top: 24px;
+    margin-bottom: 25px;
+}
+
+.illustration-ring {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    background: #fff0ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.illustration-circle {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #ffe2d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+}
+
+/* Upload area */
+.upload-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 14px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.55);
+    box-sizing: border-box;
+}
+
+/* Start button */
+.start-mapping-button {
+    margin-top: 24px;
+    height: 44px;
+    padding: 0 24px;
+    border: none;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #222222;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.start-mapping-button:hover:not(:disabled) {
+    background: #000000;
+    transform: translateY(-1px);
+}
+
+.start-mapping-button:disabled {
+    background: #cccccc !important;
+    color: #ffffff !important;
+    cursor: not-allowed !important;
+    transform: none !important;
+    opacity: 0.85;
+}
+
+/* Help */
+.mapping-help {
+    margin: 10px 0 0;
+    font-size: 11px;
+    color: #a0a0a0;
+    text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .upload-page {
+        min-height: calc(100vh - 30px);
+        padding: 30px 10px;
+    }
+
+    .upload-header h1 {
+        max-width: 320px;
+        font-size: 21px;
+    }
+
+    .upload-header p {
+        font-size: 11px;
+    }
+
+    .upload-container {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 8px;
+    }
+
+    .start-mapping-button {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .mapping-help {
+        max-width: 280px;
+        line-height: 1.5;
+    }
+}

@@ -1,0 +1,33 @@
+.app-layout {
+    min-height: 100vh;
+
+    display: flex;
+
+    background: #f7f7f8;
+}
+
+.main-content {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 25px 35px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .app-layout {
+        display: block;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+}

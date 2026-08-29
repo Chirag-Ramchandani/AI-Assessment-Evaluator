@@ -1,0 +1,94 @@
+# =========================================================
+# FRONTEND - React / Vite / Node
+# =========================================================
+
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+
+# Frontend logs
+frontend/logs/
+frontend/*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/lerna-debug.log*
+
+# Frontend environment files
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Frontend local files
+frontend/*.local
+
+
+# =========================================================
+# BACKEND - Python / FastAPI
+# =========================================================
+
+# Virtual environments
+backend/venv/
+backend/.venv/
+
+# Python cache
+backend/__pycache__/
+backend/**/*.pyc
+backend/**/*.pyo
+
+# Environment variables / secrets
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# Uploaded files
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Testing / coverage
+backend/.pytest_cache/
+backend/.coverage
+backend/htmlcov/
+
+
+# =========================================================
+# PYTHON - General
+# =========================================================
+
+__pycache__/
+*.pyc
+*.pyo
+
+
+# =========================================================
+# ENVIRONMENT / SECRETS
+# =========================================================
+
+.env
+.env.*
+!.env.example
+
+
+# =========================================================
+# IDE
+# =========================================================
+
+.vscode/
+!.vscode/extensions.json
+
+.idea/
+
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# =========================================================
+# OS
+# =========================================================
+
+.DS_Store
+Thumbs.db

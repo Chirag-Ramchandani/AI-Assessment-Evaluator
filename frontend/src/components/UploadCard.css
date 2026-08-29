@@ -1,0 +1,144 @@
+.upload-card {
+    width: 100%;
+    min-height: 180px;
+    border: 1.5px dashed #d7d7d7;
+    border-radius: 15px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.upload-card:hover {
+    border-color: #ff7043;
+    background: #fffaf7;
+    transform: translateY(-1px);
+}
+
+/* Icon */
+.upload-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #fff0ea;
+    color: #ff6338;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+/* Title */
+.upload-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.accent-text {
+    color: #ff6338;
+}
+
+/* Upload action button */
+.upload-action {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 13px;
+    border-radius: 7px;
+    background: #f5f5f5;
+    color: #555;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+/* Limit */
+.upload-limit {
+    margin-top: 9px;
+    font-size: 10px;
+    color: #999;
+}
+
+/* =========================================
+   Filled State Card (Figma Style)
+   ========================================= */
+.upload-card-filled {
+    cursor: default;
+    background: #ffffff;
+}
+
+.upload-card-filled:hover {
+    border-color: #d7d7d7;
+    background: #ffffff;
+    transform: none;
+}
+
+.file-preview-card {
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fafafa;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    padding: 12px 14px;
+    position: relative;
+}
+
+.pdf-tag {
+    background: #ff5252;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
+.file-details {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex: 1;
+}
+
+.file-name {
+    font-size: 12px;
+    font-weight: 600;
+    color: #333333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.file-meta {
+    font-size: 10px;
+    color: #888888;
+    margin-top: 2px;
+}
+
+.file-remove-btn {
+    background: #555555;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.15s ease;
+}
+
+.file-remove-btn:hover {
+    background: #222222;
+}

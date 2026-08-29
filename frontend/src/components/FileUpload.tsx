@@ -1,4 +1,5 @@
-import { DragEvent, ReactNode, useState } from "react";
+import { useState } from "react";
+import type { DragEvent, ReactNode } from "react";
 
 interface FileUploadProps {
     onFileDrop: (file: File) => void;

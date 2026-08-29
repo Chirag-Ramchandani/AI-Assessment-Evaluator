@@ -1,4 +1,5 @@
-import { useRef, ChangeEvent } from "react";
+import { useRef } from "react";
+import type { ChangeEvent } from "react";
 import { Upload, FileText, X } from "lucide-react";
 import "./UploadCard.css";
 
